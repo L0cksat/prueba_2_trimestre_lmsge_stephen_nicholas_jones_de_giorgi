@@ -1,0 +1,118 @@
+@font-face {
+    font-family: StreetFighter;
+    src: url('../Font/street.otf');
+
+}
+
+:root {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../img/fondo2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: StreetFighter;
+    color: white;
+}
+
+h1 {
+    font-size: 46px;
+    text-align: center;
+    color: crimson;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    color: crimson;
+}
+
+table {
+    width: 600px;
+    height: 800px;
+    border: 10px outset rgb(237, 175, 5);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: black;
+    text-align: center;
+}
+
+td {
+    width: 40px;
+    height: 45px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: darkorange;
+
+}
+
+td#cabecera {
+    background-image: url('../img/fondocabecera.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    font-size: 40px;
+    opacity: 0.5;
+}
+
+form {
+    width: 600px;
+    height: 1100px;
+    border: 10px outset rgb(237, 175, 5);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#formulario.campo{
+    display: inline-block;
+    width: 5rem;
+}
+
+legend {
+    font-family: StreetFighter;
+    color: rgb(237, 175, 5);
+    font-size: 14px;
+}
+
+textarea {
+    width: 560px;
+}
+
+input[type=submit]{
+    border: 1px solid crimson;
+    background-color: crimson;
+    font-family: StreetFighter;
+    font-size: 18px;
+    color: white;
+    width: 200px;
+    height:50px;
+    border-radius: 5px;
+    margin-left: 65px;
+    margin-bottom: 10px;
+}
+
+input[type=reset]{
+    border: 1px solid crimson;
+    background-color: crimson;
+    font-family: StreetFighter;
+    font-size: 18px;
+    color: white;
+    width: 200px;
+    height:50px;
+    border-radius: 5px;
+    margin-left: 65px;
+    margin-bottom: 10px;
+}
