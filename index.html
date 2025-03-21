@@ -17,7 +17,7 @@
             <thead>
                 <tr>
                     <th colspan="4">
-                    STREET FIGHTER
+                        STREET FIGHTER
                     </th>
                 </tr>
             </thead>
@@ -62,74 +62,63 @@
         </table>
     </div>
 
-    <h2>Formulario de Inscripción para jugar a Stret Fighter</h2>
-    <div class="formulario">
-        <form action="mail:sixersth@gmail.com" method="post">
-            <fieldset>
-                <legend> Datos Personales</legend>
-                <div class="campo">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre">
-                </div>
-                <div class="campo">
-                    <label for="apellido">Apellidos:</label>
-                    <input type="text" name="apellido" id="apellido">
-                </div>
-                <div class="campo">
-                    <label for="dpostal">Dirección Postal</label>
-                    <input type="text" name="dpostal" id="dpostal" placeholder="Calle">
-                    <input type="text" name="dpostal" id="dpostal" placeholder="Nº">
-                    <input type="text" name="dpostal" id="dpostal" placeholder="Piso">
-                    <input type="text" name="dpostal" id="dpostal" placeholder="Codigo Postal">
-                    <input type="text" name="dpostal" id="dpostal" placeholder="Ciudad">
-                </div>
-                <div class="campo">
-                    <label for="nick">Nick:</label>
-                    <input type="text" name="nick" id="nick">
-                </div>
-                <div id="campo">
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" name="email" id="email">
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Sexo Usuario</legend>
-                <div class="campo">
-                    <label for="radio">Hombre</label>
-                    <input type="radio" name="sexo" id="sexo">
-                </div>
-                <div class="campo">
-                    <label for="radio">Mujer</label>
-                    <input type="radio" name="sexo" id="sexo">
-                </div>
-                <div class="campo">
-                    <label for="radio">Prefiero No Decir</label>
-                    <input type="radio" name="sexo" id="sexo">
-                </div>
-            </fieldset>
-            <fieldset>
-                <div class="campo">
-                    <label for="fnacimi">Fecha Nacimiento:</label>
-                    <input type="date" name="fnacimi" id="fnacimi">
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Personajes</legend>
-                <div class="campo">
-                    <label for="personajes">Selecciona Personaje:</label>
-                    <input type="text" name="personajes" id="personajes">
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Comentarios</legend>
-                <div class="campo">
-                    <textarea name="comentarios" id="comentarios"></textarea>
-                </div>
-            </fieldset>
+    <h2>Formulario de Inscripción para jugar a Street Fighter</h2>
+    <form action="mail:sixersth@gmail.com" method="post">
+        <fieldset>
+            <legend> Datos Personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+
+            <label for="apellido">Apellidos:</label>
+            <input type="text" name="apellido" id="apellido">
+
+            <label for="calle">Dirección Postal:
+                <input type="text" name="calle" id="calle" placeholder="Calle">
+                <input type="number" name="numero" id="numero" placeholder="Nº">
+                <input type="text" name="piso" id="piso" placeholder="Piso">
+                <input type="text" name="codigopostal" id="codigopostal" placeholder="Codigo Postal">
+                <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad">
+            </label>
+
+            <label for="nick">Nick:</label>
+            <input type="text" name="nick" id="nick">
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" name="email" id="email">
+        </fieldset>
+        <fieldset>
+            <legend>Sexo Usuario</legend>
+            <label for="radio"><input type="radio" name="sexo" id="hombre">Hombre</label>
+            <label for="radio"><input type="radio" name="sexo" id="mujer">Mujer</label>
+            <label for="radio"><input type="radio" name="sexo" id="nodecir">Prefiero No Decir</label>
+        </fieldset>
+        <fieldset>
+            <legend>Fecha Nacimiento</legend>
+            <label for="fnacimi">Fecha Nacimiento:</label>
+            <input type="date" name="fnacimi" id="fnacimi">
+        </fieldset>
+        <fieldset>
+            <legend>Personajes</legend>
+            <label for="personajes">Selecciona Personaje:</label>
+            <select name="personajes2" id="personajes2">
+                <option value="ken">Ken</option>
+                <option value="chunli">Chun Li</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Comentarios</legend>
+            <textarea name="comentarios" id="comentarios"></textarea>
+        </fieldset>
+        <div class="botonera">
             <input type="submit" value="Enviar">
             <input type="reset" value="Borrar">
-        </form>
-    </div>
+        </div>
+    </form>
 </body>
 
 </html>

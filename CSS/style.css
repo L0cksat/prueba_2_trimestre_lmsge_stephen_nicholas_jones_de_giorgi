@@ -68,7 +68,6 @@ form {
     border: 10px outset rgb(237, 175, 5);
     color: white;
     border-radius: 10px;
-    text-align: center;
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: black;
@@ -77,9 +76,8 @@ form {
 
 }
 
-#formulario.campo{
-    display: inline-block;
-    width: 5rem;
+fieldset {
+    padding: 5px;
 }
 
 legend {
@@ -90,9 +88,14 @@ legend {
 
 textarea {
     width: 560px;
+    height: 100px;
 }
 
-input[type=submit]{
+.botonera {
+    margin-top: 1rem;
+}
+
+.botonera input {
     border: 1px solid crimson;
     background-color: crimson;
     font-family: StreetFighter;
@@ -105,7 +108,13 @@ input[type=submit]{
     margin-bottom: 10px;
 }
 
-input[type=reset]{
+label {
+    display: block;
+    margin-top: 2rem;
+}
+
+
+/*input[type=reset]{
     border: 1px solid crimson;
     background-color: crimson;
     font-family: StreetFighter;
