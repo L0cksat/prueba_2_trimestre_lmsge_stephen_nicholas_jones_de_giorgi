@@ -1,6 +1,6 @@
 @font-face {
     font-family: StreetFighter;
-    src: url('../Font/street.otf');
+    src: url('/Font/street.otf');
 
 }
 
@@ -11,7 +11,7 @@
 }
 
 body {
-    background-image: url('../img/fondo2.jpg');
+    background-image: url('/img/fondo2.jpg');
     background-size: cover;
     background-attachment: fixed;
     font-family: StreetFighter;
@@ -41,7 +41,7 @@ table {
     text-align: center;
 }
 
-td {
+tr, td {
     width: 40px;
     height: 45px;
     border: 2px solid grey;
@@ -52,8 +52,9 @@ td {
 
 }
 
-td#cabecera {
-    background-image: url('../img/fondocabecera.jpg');
+th {
+    background-image: url('/img/fondocabecera.jpg');
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     color: whitesmoke;
@@ -116,3 +117,13 @@ input[type=reset]{
     margin-left: 65px;
     margin-bottom: 10px;
 }
+
+/*
+div, p // aplioco a los dos el mismo estilo
+
+div p // aplico el estilo a los p que estén dentro de un div a
+cualquier nivel de profunidad (hijos, niestos, bisnietos, etc).
+
+div>p //aplaico el estilo a los p que estén dentro de un div.
+Pero sólo a los que hijos directos del div
+*/
